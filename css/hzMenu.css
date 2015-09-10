@@ -1,0 +1,24 @@
+@media screen and (min-width: 40.0625em) {
+  #hzMenuDropdown {
+    display: none; }
+
+  .f-dropdown {
+    display: block;
+    left: initial;
+    list-style: none;
+    margin-left: 0;
+    position: relative;
+    border: none;
+    font-size: 0.875rem;
+    height: auto;
+    max-height: none;
+    width: 100%;
+    z-index: 89;
+    margin-top: initial;
+    max-width: initial; }
+    .f-dropdown li {
+      float: left;
+      background: #217dbb; }
+      .f-dropdown li a {
+        color: #FFFFFF;
+        text-align: center; } }

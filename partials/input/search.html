@@ -1,0 +1,76 @@
+﻿<h2 id="title"></h2>
+<div class="markup">
+
+        <div class="row collapse">
+          <label><a class="basic-search-link">Search</a> | <a class="advanced-search-link">Advanced Search</a></label>
+          <div class="large-9 medium-10 columns">
+            <input type="text">
+          </div>
+          <div class="large-3 medium-2 columns end">
+            <input type="submit" value="Search" class="button small postfix search-submit" id="simple-submit">
+          </div>
+        </div>
+        <div class="row advanced-search-wrap" style="display:none;">
+          <div class="medium-12 columns">
+            <form>
+              <div class="row">
+                <div class="medium-12 columns">
+                  <label for="text">
+                    Text
+                    <input type="text" id="text" placeholder="Vertical Text Input" />
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 medium-12 columns">
+                  <label for="select">
+                    Select
+                    <select id="select">
+                      <option value="dr. no">Dr. No</option>
+                      <option value="from russia with love">From Russia With Love</option>
+                      <option value="goldfinger">Goldfinger</option>
+                      <option value="casino royale">Casino Royale</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="large-6 medium-12 columns">
+                  <div class="row collapse">
+                    <label for="right-postfix">Postfix</label>
+                    <div class="large-9 medium-9 small-9 columns">
+                      <input type="text" placeholder="forrest@gump" />
+                    </div>
+                    <div class="large-3 medium-3 small-3 column">
+                      <span class="postfix">.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-6 medium-6 columns">
+                  <label>Choose</label>
+                  <input type="radio" name="movie" value="frodo" id="frodo" /><label for="frodo">Frodo</label>
+                  <input type="radio" name="movie" value="conan" id="conan" /><label for="conan">Conan</label>
+                </div>
+                <div class="large-6 medium-6 columns">
+                  <label>Check</label>
+                  <input type="checkbox" name="game" value="alien" id="alien" /><label for="alien">Alien</label>
+                  <input type="checkbox" name="game" value="thething" id="thething" /><label for="thething">The Thing</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="medium-12 columns">
+                  <label for="right-textarea">Textarea</label>
+                  <textarea placeholder="a long time ago in a galaxy far, far away..."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+<!--Javascript Source
+<script>
+$(".clear").click(function () {
+$(this).closest("form").not(":button, :submit, :reset, :hidden").removeAttr("checked").removeAttr("selected").not(":checkbox, select").val('').removeAttr("value");
+});
+</script>-->
+
+</div>

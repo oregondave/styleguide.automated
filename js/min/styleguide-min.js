@@ -1,0 +1,1 @@
+function prism(){$(window).bind("create.xrayhtml",function(i){var n=!!~i.target.getAttribute("class").indexOf("prism");n&&"Prism"in window&&($(".prism").find("code").addClass("language-markup"),Prism.highlightAll())}),console.log("prism")}

@@ -1,0 +1,427 @@
+@import '../5.5/ebsco/scss_partials/color';
+button {
+  &:focus, &:active, &:hover {
+    outline:0;
+  }
+  &.secondary {
+    &:focus, &:active, &:hover {
+      background-color: $lightgray;
+    }
+  }
+}
+.headerSeparator {
+  height: .3rem;
+  background-color: $softgreen;
+}
+main {}
+
+.sidebar {
+  background-color: $gray;
+  border-right: 1px dotted $gray;
+
+  .toggleControls {
+    button {
+      background-color: $lightgray;
+      // border-right: none;
+      border-bottom: 1px dotted $lightash;
+      margin-bottom: 1rem;
+      &.first {
+        border-right: 1px dotted $lightash;
+      }
+    }
+
+  }
+  section {
+    .sectionHeading {
+      background-color: $lightgray;
+      padding: 1rem;
+      color: $darkash;
+      border-bottom: 1px solid $lightash;
+    }
+    ul {
+      margin-left: 0;
+      margin-bottom: 0;
+      font-size: inherit;
+      li {
+        list-style: none;
+        margin-left: none;
+        font-size: inherit;
+        &.subordinate {
+
+          // background-color: #595D68;
+          background-color: $paperwhite;
+          // border-top: 1px solid $lightash;
+          // border-bottom: 1px solid rgba(255, 255, 255, .25);
+          border-bottom: 1px dotted $darkash;
+
+          width: 100%;
+          a {
+            color: $darkash;
+            display: block;
+            padding: 1rem 1rem 1rem 1rem;
+            border-left: 12px solid transparent;
+             &.selected {
+              border-left: 12px solid $softgreen;
+              // background-color: $lightgreen;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  background-color: $white;
+  #title {
+    text-transform: capitalize;
+  }
+  .markup {
+    margin-bottom: 2rem;
+  }
+  .snippet {
+    margin-bottom: 2rem;
+  }
+  button.tiny.icon {
+    padding: 0.625rem 1.25rem 0.6875rem .5rem;
+    font-size: 0.6875rem;
+    .brackets-icon {
+      background-image: url(../content/svg/brackets.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+      padding: .5rem;
+      margin-right: .4rem;
+    }
+    &:after {
+      content: "show markup";
+    }
+    &.visible:after {
+      content: "hide markup";
+    }
+  }
+}
+
+#menuToggle {
+  .icon {
+    display: block;
+    padding: .5rem;
+    background-image: url(../content/svg/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+#codeToggle {
+
+  .icon {
+    display: block;
+    padding: .5rem;
+    background-image: url(../content/svg/code.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+// color swatches
+.swatch{
+  float: left;
+  margin-bottom: 1em;
+  width: 96%;
+  margin-right: 2%;
+  background-color: white;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  .swatch-preview {
+    height: 4rem;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    margin: 0 0 0.5em 0;
+  }
+  .swatch-details {
+    padding: 0 0.5rem;
+    margin-left: 0;
+    list-style-type: none;
+  }
+//Misc Colors
+.charcoal{
+  background-color: $charcoal;
+}
+.darkash{
+  background-color: $darkash;
+}
+.lightash{
+  background-color: $lightash;
+}
+.gray{
+  background-color: $gray;
+}
+.lightgray{
+  background-color: $lightgray;
+}
+.xtralightgray{
+  background-color: $xtralightgray;
+}
+.paperwhite{
+  background-color: $paperwhite;
+}
+.white{
+  background-color: $white;
+}
+//Blue
+.blue{
+  background-color: $blue;
+}
+.lightblue{
+  background-color: $lightblue;
+}
+.softblue{
+  background-color: $softblue;
+}
+.darkblue{
+  background-color: $darkblue;
+}
+.paleblue{
+  background-color: $paleblue;
+}
+.xtrapaleblue{
+  background-color: $xtrapaleblue;
+}
+//Red
+.red{
+  background-color: $red;
+}
+.softred{
+  background-color: $softred;
+}
+.lightred{
+  background-color: $lightred;
+}
+.darkred{
+  background-color: $darkred;
+}
+//Green
+.green{
+  background-color: $green;
+}
+.lightgreen{
+  background-color: $lightgreen;
+}
+.softgreen{
+  background-color: $softgreen;
+}
+.darkgreen{
+  background-color: $darkgreen;
+}
+//Yellow
+.yellow{
+  background-color: $yellow;
+}
+.lightyellow{
+  background-color: $lightyellow;
+}
+.softyellow{
+  background-color: $softyellow;
+}
+//Orange
+.orange{
+  background-color: $orange;
+}
+.lightorange{
+  background-color: $lightorange;
+}
+.softorange{
+  background-color: $softorange;
+}
+}
+
+// Grid example
+#gridExample {
+  .row {
+    padding: .5rem;
+
+    .columns {
+      background-color: $lightgray;
+      border: 1px solid $lightash;
+      height: 3rem;
+      text-align: center;
+      padding: .75rem;
+    }
+
+    .columns {
+      &:nth-child(2) {
+        background-color: $gray;
+        border-left: none;
+      }
+
+      &:nth-child(3) {
+        border-left: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Top Nav
+
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+.top-nav {
+  background-color: $charcoal;
+  color: $paperwhite;
+  height: 45px;
+
+  ul {
+    font-size: .8rem !important;
+    margin-bottom: 0;
+    li.navButton {
+      float: left;
+    }
+  .f-dropdown li {
+    font-size: 0.8rem;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  .appName {
+    display: none;
+  }
+}
+.divider {
+  // background-color: $paperwhite;
+  // width: 1px;
+  height: 45px;
+  float: left;
+  border-left: 1px dotted $paperwhite;
+}
+a {
+  color: $paperwhite;
+  white-space: nowrap;
+  display: block;
+  line-height: 45px;
+  padding: 0 15px;
+}
+.dropdown::after {
+  content: " ";
+  border-color: #FFFFFF transparent transparent transparent;
+  border-width: 4px;
+  border-style: solid;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.title-area {
+  padding-left: .5rem;
+    .logotile {
+      background-image: url(../content/svg/logotile.svg);
+      background-repeat: no-repeat;
+      padding: .65rem;
+      float: left;
+      margin-top: 11px;
+      margin-right: 6px;
+    }
+    .appName {
+      color: $paperwhite;
+      line-height:45px;
+      font-size: 1rem;
+      font-weight: 200;
+      float: left;
+    }
+  }
+}
+
+
+// Horizontal Sub Nav
+#subnav {
+  background-color: $lightgray;
+}
+
+.fluid.button {
+  display: block;
+  margin-bottom: 0;
+  border-bottom: 1px solid $white;
+}
+
+.navList {
+
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    a {
+      background-color: $blue;
+      display: block;
+      padding: 1rem;
+      color: $white;
+      border-bottom-color: $paperwhite;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    }
+  }
+}
+
+
+
+
+
+// only screen and (min-width: 64.0625em)
+
+@media screen and (min-width: 40.0625em) {
+  .fluid.button {
+    display: none;
+  }
+  ul.navList {
+    margin-bottom: 0;
+  }
+  .navList {
+
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      a {
+        display: block;
+        padding: 1rem;
+        color: $white;
+        text-align: center;
+        white-space: nowrap;
+        border-bottom-color: $paperwhite;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        clear: left;
+      }
+
+      &:last-child {
+        a {
+        border-right: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 64.0625em) {
+  .navList {
+      li {
+        a {
+        border-right: 1px solid $white;
+        border-bottom: none;
+        border-bottom-style: none;
+        float: left;
+        clear: none;
+        }
+      }
+    }
+  }
+

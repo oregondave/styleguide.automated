@@ -1,0 +1,21 @@
+<h2 id="title"></h2>
+<div class="markup">
+  <div class="fluid row collapse">
+  <nav id="subnav" role="navigation" class="large-12 medium-3 columns">
+      <div id="navDropdown" class="fluid button">Dropdown</div>
+      <ul class="navList" id="navList">
+        <li><a href="#">This is a link</a></li>
+        <li><a href="#">This is another</a></li>
+        <li><a href="#">Yet another</a></li>
+        <li><a href="#">Yet another</a></li>
+        <li><a href="#">Yet another</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+$('#navList a').click(function(e) {
+  /* Act on the event */
+ e.preventDefault();
+});

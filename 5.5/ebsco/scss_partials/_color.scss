@@ -1,0 +1,35 @@
+// COLOR VARIABLES
+$charcoal: #323232;
+$darkash: lighten( $charcoal, 20% );
+$lightash: lighten( $charcoal, 40% );
+$gray: lighten( $charcoal, 67% );
+$lightgray: lighten( $charcoal, 74% );
+$xtralightgray: lighten( $charcoal, 77% );
+$paperwhite: lighten( $charcoal, 80% );
+$white: #FFFFFF;
+
+$blue: #3498DB;
+$lightblue: lighten( $blue, 20%);
+$softblue: darken( $blue, 10%);
+$darkblue: darken( $blue, 18%);
+
+$paleblue: lighten( $darkblue, 50% ); // table row hover / content block bg
+$xtrapaleblue: lighten( $darkblue, 60% ); // table row highlight
+
+$red: #BF4040;
+$softred: lighten( $red, 10% );
+$lightred: lighten( $red, 35%);
+$darkred: darken( $red, 5% );
+
+$green: #43AC6A;
+$lightgreen: #BEDDB1;
+$softgreen: darken( $lightgreen, 15% );
+$darkgreen: desaturate( $green, 20% );
+
+$yellow: #ffff66;
+$lightyellow: lighten( $yellow, 15% );
+$softyellow: desaturate( $yellow, 20% );
+
+$orange: #FF6700;
+$lightorange: lighten( $orange, 30% );
+$softorange: desaturate( $orange, 30% );
