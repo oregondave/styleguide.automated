@@ -53,7 +53,7 @@ gulp.task('connect', function() {
 // });
 
 
-gulp.task('default', ['data0', 'connect', 'watch']
+gulp.task('default', ['connect']
   // place code for your default task here
 
   // gulp.run('data0', 'connect');
