@@ -4,13 +4,12 @@ $.getJSON("dist/home.json", function(data){
     $('#sidebar').append("<section id='" + index + "'></section>");
     $('#' + index).append("<div class='sectionHeading'>" + index + "</div>");
     $('#' + index).append("<ul id='" + index + "Subordinates" + "'></ul>")
-    console.log(index)
 
-    // $.each(data[index], function(key, value) {
-    //   var targetList = $('#' + index + "Subordinates")
-    //   var cleanedName = key.replace(/_/g, ' ');
-    //   $(targetList).append("<li class='subordinate'><a href='" + "#" + value + "'>" + cleanedName.replace('.html', '') + "</a></li>");
-    // });
+    $.each(data[index], function(key, value) {
+      var targetList = $('#' + index + "Subordinates")
+      var cleanedName = key.replace(/_/g, ' ');
+      $(targetList).append("<li class='subordinate'><a href='" + "#" + value + "'>" + cleanedName.replace('.html', '') + "</a></li>");
+    });
   });
 
  $('section ul').hide();
