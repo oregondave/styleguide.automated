@@ -1,5 +1,6 @@
 button:focus, button:active, button:hover {
   outline: 0; }
+
 button.secondary:focus, button.secondary:active, button.secondary:hover {
   background-color: #efefef; }
 
@@ -18,7 +19,7 @@ button.secondary:focus, button.secondary:active, button.secondary:hover {
       border-right: 1px dotted #989898; }
   .sidebar section .sectionHeading {
     background-color: #efefef;
-    padding: 1rem;
+    padding: .8rem;
     color: #656565;
     border-bottom: 1px solid #989898; }
   .sidebar section ul {
@@ -28,7 +29,7 @@ button.secondary:focus, button.secondary:active, button.secondary:hover {
     .sidebar section ul li {
       list-style: none;
       margin-left: none;
-      font-size: inherit; }
+      font-size: .775rem; }
       .sidebar section ul li.subordinate {
         background-color: #fefefe;
         border-bottom: 1px dotted #656565;
@@ -36,7 +37,7 @@ button.secondary:focus, button.secondary:active, button.secondary:hover {
         .sidebar section ul li.subordinate a {
           color: #656565;
           display: block;
-          padding: 1rem 1rem 1rem 1rem;
+          padding: .8rem;
           border-left: 12px solid transparent; }
           .sidebar section ul li.subordinate a.selected {
             border-left: 12px solid #92c67c; }
@@ -50,7 +51,7 @@ button.secondary:focus, button.secondary:active, button.secondary:hover {
   .content .snippet {
     margin-bottom: 2rem; }
   .content button.tiny.icon {
-    padding: 0.625rem 1.25rem 0.6875rem .5rem;
+    padding: 0.625rem 1.25rem 0.6875rem 0.5rem;
     font-size: 0.6875rem; }
     .content button.tiny.icon .brackets-icon {
       background-image: url(../content/svg/brackets.svg);
@@ -240,10 +241,8 @@ ul {
 @media screen and (min-width: 40.0625em) {
   .fluid.button {
     display: none; }
-
   ul.navList {
     margin-bottom: 0; }
-
   .navList {
     list-style: none;
     margin-left: 0; }
@@ -259,6 +258,7 @@ ul {
       clear: left; }
     .navList li:last-child a {
       border-right: none; } }
+
 @media screen and (min-width: 64.0625em) {
   .navList li a {
     border-right: 1px solid #FFFFFF;

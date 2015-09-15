@@ -34,7 +34,7 @@ main {}
   section {
     .sectionHeading {
       background-color: $lightgray;
-      padding: 1rem;
+      padding: .8rem;
       color: $darkash;
       border-bottom: 1px solid $lightash;
     }
@@ -45,7 +45,7 @@ main {}
       li {
         list-style: none;
         margin-left: none;
-        font-size: inherit;
+        font-size: .775rem;
         &.subordinate {
 
           // background-color: #595D68;
@@ -58,7 +58,7 @@ main {}
           a {
             color: $darkash;
             display: block;
-            padding: 1rem 1rem 1rem 1rem;
+            padding: .8rem;
             border-left: 12px solid transparent;
              &.selected {
               border-left: 12px solid $softgreen;
