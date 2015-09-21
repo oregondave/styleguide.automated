@@ -18,7 +18,8 @@ gulp.task('data0', function() {
     .pipe(directoryMap({
       filename: 'home.json'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(livereload());
 });
 gulp.task('watch', function() {
   livereload.listen();
@@ -26,31 +27,9 @@ gulp.task('watch', function() {
   gulp.watch('partials/**/*.html', ['data0']);
 });
 
-// gulp.task('data1', function() {
-//   gulp.src('partials/uicomponents/*.html')
-//     .pipe(directoryMap({
-//       filename: 'urls1.json'
-//     }))
-//     .pipe(gulp.dest('dist'));
-// });
-
-// gulp.task('data2', function() {
-//   gulp.src('partials/uicomponents2/*.html')
-//     .pipe(directoryMap({
-//       filename: 'urls2.json'
-//     }))
-//     .pipe(gulp.dest('dist'));
-// });
-
 gulp.task('connect', function() {
   connect.server();
 });
-
-// gulp.task('layout', function () {
-//   return gulp.src(['uicomponents/*.html'])
-//     .pipe(wrap({src: 'template/layout.html'}))
-//     .pipe(gulp.dest('dist'));
-// });
 
 
 gulp.task('default', ['data0', 'connect', 'watch']
